@@ -20,7 +20,14 @@ import { TabsPage } from '../pages/tabs/tabs';
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp, AboutPage, ContactPage, HomePage, TabsPage],
+  entryComponents: [
+    MyApp,
+    AboutPage,
+    ContactPage,
+    HomePage,
+    PlayersPage,
+    TabsPage
+  ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
 export class AppModule {}
