@@ -6,5 +6,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'players.html'
 })
 export class PlayersPage {
+    id: number;
+    player_name: string;
+    player_note: number;
+
   constructor(public navCtrl: NavController) {}
 }

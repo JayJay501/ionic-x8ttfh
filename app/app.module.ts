@@ -11,6 +11,7 @@ import { PlayersPage } from '../pages/players/players';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { SQLite } from '@ionic-native/sqlite';
+import { SQLitePorter } from '@ionic-native/sqlite-porter';
 import { Toast } from '@ionic-native/toast';
 
 @NgModule({
@@ -38,7 +39,8 @@ import { Toast } from '@ionic-native/toast';
 
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    SQLite,
+    SQLite, 
+    SQLitePorter,
     Toast
   ]
 })
