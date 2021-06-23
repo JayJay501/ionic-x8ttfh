@@ -10,8 +10,8 @@ import { HomePage } from '../pages/home/home';
 import { PlayersPage } from '../pages/players/players';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import {SQLite} from '@ionic-native/sqlite';
-import {Toast} from '@ionic-native/toast';
+import { SQLite } from '@ionic-native/sqlite';
+import { Toast } from '@ionic-native/toast';
 
 @NgModule({
   declarations: [
@@ -23,10 +23,7 @@ import {Toast} from '@ionic-native/toast';
     TabsPage
   ],
 
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
+  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
 
   bootstrap: [IonicApp],
 
@@ -39,7 +36,10 @@ import {Toast} from '@ionic-native/toast';
     TabsPage
   ],
 
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler, 
-    SQLite,Toast }]
+  providers: [
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    SQLite,
+    Toast
+  ]
 })
 export class AppModule {}
