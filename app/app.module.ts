@@ -38,8 +38,8 @@ import { Toast } from '@ionic-native/toast';
 
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    SQLite
-    //Toast
+    SQLite,
+    Toast
   ]
 })
 export class AppModule {}
